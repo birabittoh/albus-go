@@ -1,0 +1,8 @@
+services:
+  albus:
+    container_name: albus-go
+    image: albus-go
+    build:
+      context: .
+    env_file: .env
+    restart: unless-stopped
