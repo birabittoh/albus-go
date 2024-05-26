@@ -4,8 +4,7 @@ A Telegram Bot that converts documents to more readable formats.
 ## Usage
 
 ```
-git submodule init
-git submodule update
+git submodule update --init --recursive
 cp .env.example .env
 ```
 

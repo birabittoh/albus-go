@@ -5,14 +5,13 @@ FROM golang:alpine AS builder
 WORKDIR /build
 
 # Download Go modules
-COPY ./telegram-bot-api ./telegram-bot-api
-COPY go.mod go.su[m] ./
+RUN apk update && \
+    apk add --no-cache \
+    git
+
+COPY . .
+RUN git submodule update --init --recursive
 RUN go mod download
-
-# Transfer source code
-
-
-COPY *.go ./
 
 # Build
 RUN CGO_ENABLED=0 go build -trimpath -o /dist/app
