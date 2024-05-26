@@ -13,6 +13,7 @@ var conversionMap = map[string]string{
 	".docx": ".pdf",
 	".odt":  ".pdf",
 	".epub": ".html",
+	".md":   ".pdf",
 }
 
 func SplitFilename(filename string) (name, ext string) {
