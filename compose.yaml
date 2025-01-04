@@ -1,7 +1,7 @@
 services:
   albus:
     container_name: albus-go
-    image: albus-go
+    image: ghcr.io/birabittoh/albus-go:main
     build:
       context: .
     env_file: .env
