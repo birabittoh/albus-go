@@ -12,7 +12,7 @@ import (
 var conversionMap = map[string]string{
 	".docx": ".pdf",
 	".odt":  ".pdf",
-	".epub": ".html",
+	".epub": ".pdf",
 	".md":   ".pdf",
 }
 

@@ -16,8 +16,8 @@ make
 make run
 ```
 
-### Poetry
-Ensure `pandoc` and `tectonic` are installed.
+### Native
+Ensure `pandoc` and `tectonic` are installed, then:
 
 ```
 go run .
